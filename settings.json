@@ -1,0 +1,20 @@
+{
+    "aws":{
+         "aws_access_key_id":"tus-llaves",
+         "aws_secret_access_key":"tus-llaves",
+         "bucket":"tf-tech-talk-landing-bucket",
+         "key":"to_load",
+         "prefix":"tech_talk_raw_ora_",
+         "destination_bucket":"tf-tech-talk-raw-bucket",
+         "destination_bucket_metrics": "tf-tech-talk-metrics-bucket",
+         "gluejobname":"tf-tech-talk-glue-job",
+         "lambda_function": "tf-tech-talk-lambda",
+         "lftags": [{"TagKey": "ambiente","TagValues": ["dev2"]},
+                     {"TagKey": "capa","TagValues": ["raw"]}],
+         "iac_manager":"arn:aws:iam::663369212643:user/iac_manager"
+         },
+     "config":{
+         "sleep": 4
+     }
+ }
+ 
